@@ -1,0 +1,203 @@
+[
+  {
+    "id": "SAR_SCENE_01",
+    "filename": "sar_scene_01_fresh_linear_slick.tif",
+    "title": "Scene 01: Fresh Linear Tanker Discharge",
+    "location_name": "Offshore Mumbai Tanker Corridor",
+    "bounds": [
+      72.38,
+      19.45,
+      72.62,
+      19.65
+    ],
+    "pattern": "linear",
+    "seed": 101,
+    "description": "Recent illegal bilge discharge along northbound tanker fairway. Highly elongated, sharp boundaries.",
+    "png_preview": "sar_scene_01_fresh_linear_slick.png",
+    "size_bytes": 65950,
+    "detection_verified": true,
+    "detected_area_km2": 27.21,
+    "detected_confidence": 90.1,
+    "detected_age": ">24h",
+    "detected_centroid": [
+      72.5004,
+      19.5597
+    ]
+  },
+  {
+    "id": "SAR_SCENE_02",
+    "filename": "sar_scene_02_dispersed_patch_spill.tif",
+    "title": "Scene 02: Dispersed Wind-Sheared Patch",
+    "location_name": "South Bombay High Oilfield Area",
+    "bounds": [
+      72.3,
+      19.55,
+      72.54,
+      19.75
+    ],
+    "pattern": "patch",
+    "seed": 202,
+    "description": "Wind-sheared medium crude patch undergoing lateral advection. Irregular damping periphery.",
+    "png_preview": "sar_scene_02_dispersed_patch_spill.png",
+    "size_bytes": 65950,
+    "detection_verified": true,
+    "detected_area_km2": 42.62,
+    "detected_confidence": 94.0,
+    "detected_age": "fresh",
+    "detected_centroid": [
+      72.4225,
+      19.6629
+    ]
+  },
+  {
+    "id": "SAR_SCENE_03",
+    "filename": "sar_scene_03_vessel_wake_discharge.tif",
+    "title": "Scene 03: Vessel Wake Discharge with Point Target",
+    "location_name": "Traffic Separation Scheme (TSS) West",
+    "bounds": [
+      72.44,
+      19.32,
+      72.68,
+      19.52
+    ],
+    "pattern": "wake",
+    "has_ship_target": true,
+    "seed": 303,
+    "description": "Continuous discharge trailing an active commercial ship with bright specular radar backscatter point target.",
+    "png_preview": "sar_scene_03_vessel_wake_discharge.png",
+    "size_bytes": 65950,
+    "detection_verified": true,
+    "detected_area_km2": 33.11,
+    "detected_confidence": 69.6,
+    "detected_age": "6-24h",
+    "detected_centroid": [
+      72.5718,
+      19.4282
+    ]
+  },
+  {
+    "id": "SAR_SCENE_04",
+    "filename": "sar_scene_04_plume_feathered_slick.tif",
+    "title": "Scene 04: Heavy Blowout Feathered Plume",
+    "location_name": "Western Arabian Sea EEZ Outer Limit",
+    "bounds": [
+      72.2,
+      19.6,
+      72.44,
+      19.8
+    ],
+    "pattern": "plume",
+    "seed": 404,
+    "description": "Broad expanding feather plume with spreading filaments. High surface extent and high confidence.",
+    "png_preview": "sar_scene_04_plume_feathered_slick.png",
+    "size_bytes": 65950,
+    "detection_verified": true,
+    "detected_area_km2": 84.74,
+    "detected_confidence": 92.9,
+    "detected_age": "fresh",
+    "detected_centroid": [
+      72.3518,
+      19.7121
+    ]
+  },
+  {
+    "id": "SAR_SCENE_05",
+    "filename": "sar_scene_05_coastal_approach_spill.tif",
+    "title": "Scene 05: Coastal Nearshore Anchor Spill",
+    "location_name": "Mumbai Port Outer Anchorage",
+    "bounds": [
+      72.52,
+      19.38,
+      72.76,
+      19.58
+    ],
+    "pattern": "coastal",
+    "seed": 505,
+    "description": "Anchor roadstead discharge under shallow coastal bathymetric wave refraction.",
+    "png_preview": "sar_scene_05_coastal_approach_spill.png",
+    "size_bytes": 65950,
+    "detection_verified": true,
+    "detected_area_km2": 55.37,
+    "detected_confidence": 91.7,
+    "detected_age": "fresh",
+    "detected_centroid": [
+      72.6457,
+      19.496
+    ]
+  },
+  {
+    "id": "SAR_SCENE_06",
+    "filename": "sar_scene_06_dual_streak_discharge.tif",
+    "title": "Scene 06: Dual-Vessel Convergence Discharge",
+    "location_name": "International Shipping Fairway West",
+    "bounds": [
+      72.28,
+      19.4,
+      72.52,
+      19.6
+    ],
+    "pattern": "dual_streak",
+    "seed": 606,
+    "description": "Two parallel discharge tracks originating from two commercial ships maneuvering in tandem.",
+    "png_preview": "sar_scene_06_dual_streak_discharge.png",
+    "size_bytes": 65950,
+    "detection_verified": true,
+    "detected_area_km2": 16.94,
+    "detected_confidence": 88.3,
+    "detected_age": ">24h",
+    "detected_centroid": [
+      72.4024,
+      19.523
+    ]
+  },
+  {
+    "id": "SAR_SCENE_07",
+    "filename": "sar_scene_07_weathered_aged_spill.tif",
+    "title": "Scene 07: Weathered Emulsified Spill (>24h)",
+    "location_name": "Northwest Deep Water Shelf",
+    "bounds": [
+      72.22,
+      19.72,
+      72.46,
+      19.92
+    ],
+    "pattern": "aged",
+    "seed": 707,
+    "description": "Matured hydrocarbon emulsion (>24h). Highly fragmented with filament breakups and variable damping.",
+    "png_preview": "sar_scene_07_weathered_aged_spill.png",
+    "size_bytes": 65950,
+    "detection_verified": true,
+    "detected_area_km2": 41.23,
+    "detected_confidence": 92.2,
+    "detected_age": "fresh",
+    "detected_centroid": [
+      72.3491,
+      19.8322
+    ]
+  },
+  {
+    "id": "SAR_SCENE_08",
+    "filename": "sar_scene_08_high_contrast_heavy_crude.tif",
+    "title": "Scene 08: High-Contrast Heavy Bunker Fuel",
+    "location_name": "Central Surveillance Zone (Swath Focus)",
+    "bounds": [
+      72.4,
+      19.42,
+      72.64,
+      19.62
+    ],
+    "pattern": "heavy_crude",
+    "seed": 808,
+    "description": "Viscous bunker fuel release with steep backscatter gradient (>12 dB damping) and zero capillary return.",
+    "png_preview": "sar_scene_08_high_contrast_heavy_crude.png",
+    "size_bytes": 65950,
+    "detection_verified": true,
+    "detected_area_km2": 39.4,
+    "detected_confidence": 92.8,
+    "detected_age": "6-24h",
+    "detected_centroid": [
+      72.5222,
+      19.5321
+    ]
+  }
+]

@@ -1,0 +1,54 @@
+# =============================================================================
+# Docker Compose — Oil Spill Detection & Vessel Attribution System
+# =============================================================================
+# Usage: docker-compose up --build
+# Frontend: http://localhost:5173
+# Backend:  http://localhost:8000
+# API Docs: http://localhost:8000/docs
+# =============================================================================
+
+services:
+  # ---------------------------------------------------------------------------
+  # Backend — FastAPI + Python ML/Geospatial stack
+  # ---------------------------------------------------------------------------
+  backend:
+    build:
+      context: .
+      dockerfile: backend/Dockerfile
+    container_name: oilspill-backend
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data           # Cached datasets
+      - ./models:/app/models       # Trained model weights
+      - ./backend:/app/backend     # Hot-reload during dev
+    environment:
+      - PYTHONPATH=/app
+      - DATA_DIR=/app/data
+      - MODELS_DIR=/app/models
+    env_file:
+      - .env
+    command: >
+      uvicorn backend.main:app
+      --host 0.0.0.0
+      --port 8000
+      --reload
+    restart: unless-stopped
+
+  # ---------------------------------------------------------------------------
+  # Frontend — React + Vite + Leaflet dashboard
+  # ---------------------------------------------------------------------------
+  frontend:
+    build:
+      context: ./frontend
+      dockerfile: Dockerfile
+    container_name: oilspill-frontend
+    ports:
+      - "5173:5173"
+    volumes:
+      - ./frontend/src:/app/src
+    environment:
+      - VITE_API_URL=http://localhost:8000
+    depends_on:
+      - backend
+    restart: unless-stopped

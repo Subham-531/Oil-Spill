@@ -1,0 +1,159 @@
+/* =============================================================================
+   SWACHH TRACK — MARITIME FORENSICS CONSOLE LAYOUT & MEDIA QUERIES
+   Warm Analog Bridge Skeuomorphic Console
+   Zero Blue • Zero Purple • Zero Emojis • 4px Spacing Grid
+   ============================================================================= */
+
+/* Main App Wrapper */
+.app-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--ink-950);
+  color: var(--fg);
+  overflow: hidden;
+  position: relative;
+}
+
+/* Console Workspace Row */
+.console-body {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  min-height: 0;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Map Region */
+.console-map-viewport {
+  flex: 1;
+  height: 100%;
+  position: relative;
+  background-color: var(--ink-950);
+  overflow: hidden;
+}
+
+/* Sidebar Responsive Drawer Drawer Rail */
+.sidebar-rail-btn {
+  display: none;
+}
+
+/* =============================================================================
+   SWACHH TRACK — MARITIME FORENSICS CONSOLE LAYOUT & MEDIA QUERIES
+   ============================================================================= */
+
+/* Tablet (<1280px): Right panel becomes a drawer over map */
+@media (max-width: 1280px) {
+  .hero-grid {
+    grid-templateColumns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .stats-band-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .stats-cell:nth-child(2) {
+    border-right: none !important;
+  }
+
+  .pipeline-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .preview-inner-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .features-grid-layout {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .evidence-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
+
+  .console-sidebar-container {
+    position: absolute !important;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 600;
+    transform: translateX(0);
+    transition: transform 320ms cubic-bezier(0.2, 0, 0, 1);
+  }
+
+  .console-sidebar-container.collapsed {
+    transform: translateX(100%);
+  }
+
+  .sidebar-rail-btn {
+    display: flex;
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    z-index: 550;
+  }
+}
+
+/* Mobile (<768px): Stacked layout, hero 3D to static SVG fallback */
+@media (max-width: 768px) {
+  .nav-links-desktop {
+    display: none !important;
+  }
+
+  .hero-title {
+    font-size: 40px !important;
+  }
+
+  .stats-band-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .stats-cell {
+    border-right: none !important;
+    border-bottom: 1px solid var(--line) !important;
+    padding: 24px 16px !important;
+  }
+
+  .features-grid-layout {
+    grid-template-columns: 1fr !important;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr !important;
+  }
+
+  .console-body {
+    flex-direction: column !important;
+    overflow-y: auto !important;
+  }
+
+  .console-map-viewport {
+    height: 55vh !important;
+    min-height: 55vh !important;
+    flex: none !important;
+  }
+
+  .console-sidebar-container {
+    position: relative !important;
+    width: 100% !important;
+    height: auto !important;
+    transform: none !important;
+  }
+
+  .keyboard-hints-chip {
+    display: none !important;
+  }
+
+  .timeline-slider-box {
+    width: 90% !important;
+    bottom: 8px !important;
+  }
+}

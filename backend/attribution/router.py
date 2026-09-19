@@ -5,6 +5,7 @@ Implemented in Phase 4.
 """
 
 import json
+import threading
 from pathlib import Path
 from fastapi import APIRouter
 from fastapi.responses import JSONResponse
@@ -25,7 +26,10 @@ class AttributionRequest(BaseModel):
 
 router = APIRouter()
 
-LATEST_ATTRIBUTION_CACHE = []
+# Thread-safe attribution cache keyed by incident_id to avoid cross-user
+# data leakage in concurrent PDF report requests (F-006).
+_ATTRIBUTION_CACHE: dict = {}
+_ATTRIBUTION_LOCK = threading.Lock()
 
 
 @router.post("/")
@@ -45,24 +49,34 @@ async def run_attribution(request: AttributionRequest):
         Ranked list of suspects with sub-scores and track GeoJSON.
     """
     from backend.attribution.analyzer import get_analyzer
-    global LATEST_ATTRIBUTION_CACHE
-    
+
     try:
         analyzer = get_analyzer()
         
-        # We expect request.origin_polygon_geojson to contain the full feature with properties
+        origin_geom = request.origin_polygon_geojson
+        timestamp = request.origin_time_start
+        if isinstance(origin_geom, dict) and origin_geom.get("type") == "Feature":
+            if "timestamp" in origin_geom.get("properties", {}):
+                timestamp = origin_geom["properties"]["timestamp"]
+            origin_geom = origin_geom.get("geometry", origin_geom)
+
         origin_estimate = {
             "type": "Feature",
-            "geometry": request.origin_polygon_geojson,
+            "geometry": origin_geom,
             "properties": {
+                "timestamp": timestamp,
                 "time_window_start": request.origin_time_start,
                 "time_window_end": request.origin_time_end
             }
         }
         
         ranked_suspects = analyzer.attribute_spill(origin_estimate)
-        LATEST_ATTRIBUTION_CACHE = ranked_suspects
-        
+        if request.top_n and request.top_n > 0:
+            ranked_suspects = ranked_suspects[:request.top_n]
+
+        with _ATTRIBUTION_LOCK:
+            _ATTRIBUTION_CACHE["latest"] = ranked_suspects
+
         return ranked_suspects
         
     except Exception as e:
@@ -163,14 +177,14 @@ async def get_report(incident_id: str, format: str = "pdf"):
     story.append(t_summary)
     story.append(Spacer(1, 10))
 
-    global LATEST_ATTRIBUTION_CACHE
     story.append(Paragraph("<b>2. Ranked Suspect Vessels (AIS Transponder Telemetry)</b>", h2_style))
 
     suspect_data = [
         ["Rank", "Vessel Name", "MMSI", "Vessel Type", "CPA Dist", "Telemetry Anomaly", "Score"],
     ]
 
-    suspects_to_render = LATEST_ATTRIBUTION_CACHE
+    with _ATTRIBUTION_LOCK:
+        suspects_to_render = list(_ATTRIBUTION_CACHE.get(incident_id) or _ATTRIBUTION_CACHE.get("latest") or [])
     if not suspects_to_render:
         # Load from demo cache as graceful fallback
         cache_path = Path("data/demo_cache/attribution_result.json")

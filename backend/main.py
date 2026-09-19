@@ -7,6 +7,9 @@ Modules are registered as routers and implemented phase-by-phase.
 """
 
 import os
+from dotenv import load_dotenv
+
+load_dotenv()
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 from fastapi.staticfiles import StaticFiles

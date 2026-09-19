@@ -1,0 +1,25 @@
+{
+  "scene_id": "SAR_SCENE_03",
+  "title": "Scene 03: Vessel Wake Discharge with Point Target",
+  "filename": "sar_scene_03_vessel_wake_discharge.tif",
+  "class_counts": {
+    "0": 56452,
+    "1": 9084,
+    "2": 0,
+    "3": 0
+  },
+  "claimed": {
+    "area_km2": 33.11,
+    "confidence": 69.6,
+    "age_bucket": "6-24h"
+  },
+  "measured": {
+    "area_km2_backend": 33.10967944336087,
+    "area_km2_geodesic": 31.240423225718708,
+    "area_discrepancy_pct": 5.983453566350194,
+    "confidence_pct": 69.57271695137024,
+    "elongation": 4.4094821177575625,
+    "age_bucket": "6-24h"
+  },
+  "verdict": "VERIFIED"
+}

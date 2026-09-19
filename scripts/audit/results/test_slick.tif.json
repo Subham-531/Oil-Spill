@@ -1,0 +1,15 @@
+{
+  "scene_id": "test_slick.tif",
+  "file_path": "data/sar/demo/test_slick.tif",
+  "class_counts": {
+    "0": 60343,
+    "1": 5193,
+    "2": 0,
+    "3": 0
+  },
+  "measured": {
+    "area_km2_backend": 45.88790405273607,
+    "area_km2_geodesic": 43.286219203571854,
+    "confidence_pct": 72.41960763931274
+  }
+}

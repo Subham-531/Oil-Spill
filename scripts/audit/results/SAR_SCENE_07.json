@@ -1,0 +1,25 @@
+{
+  "scene_id": "SAR_SCENE_07",
+  "title": "Scene 07: Weathered Emulsified Spill (>24h)",
+  "filename": "sar_scene_07_weathered_aged_spill.tif",
+  "class_counts": {
+    "0": 60451,
+    "1": 5085,
+    "2": 0,
+    "3": 0
+  },
+  "claimed": {
+    "area_km2": 41.23,
+    "confidence": 92.2,
+    "age_bucket": "fresh"
+  },
+  "measured": {
+    "area_km2_backend": 41.231432373046786,
+    "area_km2_geodesic": 38.808243292078885,
+    "area_discrepancy_pct": 6.244006106461656,
+    "confidence_pct": 92.15413928031921,
+    "elongation": 2.739621979864525,
+    "age_bucket": "fresh"
+  },
+  "verdict": "VERIFIED"
+}

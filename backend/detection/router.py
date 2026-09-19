@@ -11,6 +11,21 @@ router = APIRouter()
 DEMO_DIR = Path("data/sar/demo")
 INDEX_PATH = DEMO_DIR / "scenes_index.json"
 
+# Maximum acceptable SAR scene upload size (200 MB)
+MAX_UPLOAD_BYTES = 200 * 1024 * 1024
+# Sentinel-1 TIFF files start with the II*\x00 or MM\x00* TIFF magic bytes
+_TIFF_MAGIC = (b"II*\x00", b"MM\x00*")
+
+
+def _is_tiff_image(data: bytes) -> bool:
+    """Verify TIFF file magic bytes to reject non-image uploads."""
+    return data[:4] in _TIFF_MAGIC
+
+
+def _safe_scene_id(scene_id: str) -> str:
+    """Strip directory traversal characters from a user-supplied scene id."""
+    return os.path.basename(scene_id)
+
 
 @router.get("/scenes")
 async def list_sar_scenes():
@@ -50,12 +65,36 @@ async def run_detection(
             fd, temp_path = tempfile.mkstemp(suffix=".tif")
             with os.fdopen(fd, "wb") as buffer:
                 shutil.copyfileobj(scene_file.file, buffer)
+
+            file_size = os.path.getsize(temp_path)
+            if file_size > MAX_UPLOAD_BYTES:
+                return JSONResponse(
+                    status_code=413,
+                    content={
+                        "error": (
+                            f"Uploaded file too large ({file_size / 1e6:.1f} MB). "
+                            f"Maximum allowed size is {MAX_UPLOAD_BYTES / 1e6:.0f} MB."
+                        )
+                    },
+                )
+
+            with open(temp_path, "rb") as f:
+                header = f.read(4)
+            if not _is_tiff_image(header):
+                return JSONResponse(
+                    status_code=400,
+                    content={
+                        "error": "Uploaded file is not a valid TIFF SAR scene."
+                    },
+                )
+
             target_scene = temp_path
         elif scene_id:
+            safe_id = _safe_scene_id(scene_id)
             # Check if scene_id matches a pre-staged file
-            candidate = DEMO_DIR / scene_id
+            candidate = DEMO_DIR / safe_id
             if not candidate.exists():
-                candidate = DEMO_DIR / f"{scene_id}.tif"
+                candidate = DEMO_DIR / f"{safe_id}.tif"
             if not candidate.exists():
                 # Check scenes_index
                 if INDEX_PATH.exists():

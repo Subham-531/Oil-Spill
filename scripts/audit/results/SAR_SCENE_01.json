@@ -1,0 +1,25 @@
+{
+  "scene_id": "SAR_SCENE_01",
+  "title": "Scene 01: Fresh Linear Tanker Discharge",
+  "filename": "sar_scene_01_fresh_linear_slick.tif",
+  "class_counts": {
+    "0": 62085,
+    "1": 3451,
+    "2": 0,
+    "3": 0
+  },
+  "claimed": {
+    "area_km2": 27.21,
+    "confidence": 90.1,
+    "age_bucket": ">24h"
+  },
+  "measured": {
+    "area_km2_backend": 27.207872314452963,
+    "area_km2_geodesic": 25.651443032735706,
+    "area_discrepancy_pct": 6.0676090609443785,
+    "confidence_pct": 90.12675881385803,
+    "elongation": 6.73841491165889,
+    "age_bucket": ">24h"
+  },
+  "verdict": "VERIFIED"
+}

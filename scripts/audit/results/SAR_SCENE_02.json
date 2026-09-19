@@ -1,0 +1,25 @@
+{
+  "scene_id": "SAR_SCENE_02",
+  "title": "Scene 02: Dispersed Wind-Sheared Patch",
+  "filename": "sar_scene_02_dispersed_patch_spill.tif",
+  "class_counts": {
+    "0": 60444,
+    "1": 5092,
+    "2": 0,
+    "3": 0
+  },
+  "claimed": {
+    "area_km2": 42.62,
+    "confidence": 94.0,
+    "age_bucket": "fresh"
+  },
+  "measured": {
+    "area_km2_backend": 42.621154541016075,
+    "area_km2_geodesic": 40.15785848477253,
+    "area_discrepancy_pct": 6.134032414048176,
+    "confidence_pct": 93.97478699684143,
+    "elongation": 1.4385355116922909,
+    "age_bucket": "fresh"
+  },
+  "verdict": "VERIFIED"
+}

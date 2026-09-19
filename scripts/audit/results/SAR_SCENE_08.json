@@ -1,0 +1,25 @@
+{
+  "scene_id": "SAR_SCENE_08",
+  "title": "Scene 08: High-Contrast Heavy Bunker Fuel",
+  "filename": "sar_scene_08_high_contrast_heavy_crude.tif",
+  "class_counts": {
+    "0": 60763,
+    "1": 4773,
+    "2": 0,
+    "3": 0
+  },
+  "claimed": {
+    "area_km2": 39.4,
+    "confidence": 92.8,
+    "age_bucket": "6-24h"
+  },
+  "measured": {
+    "area_km2_backend": 39.39952587890536,
+    "area_km2_geodesic": 37.151853596983315,
+    "area_discrepancy_pct": 6.049960000123792,
+    "confidence_pct": 92.83043146133423,
+    "elongation": 5.744250773906794,
+    "age_bucket": "6-24h"
+  },
+  "verdict": "VERIFIED"
+}

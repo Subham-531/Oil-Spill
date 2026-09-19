@@ -1,0 +1,14 @@
+# Automated Signal Sweep Tool Status
+
+Tool | Status | Notes
+---|---|---
+oxlint | Available (v1.81.0) | Static JS/JSX linter installed in frontend/node_modules
+TypeScript (tsc) | Not Installed | Project is pure JS/JSX without .ts files or tsconfig
+ESLint | Not Installed | oxlint used instead
+Ruff / Flake8 / Pylint | Not Installed | No python linter in active PATH
+Mypy | Not Installed | No python type checker in active PATH
+Bandit / Gosec | Not Installed | SAST tools not installed locally
+Gitleaks / Trufflehog | Not Installed | Secrets scanners not installed locally
+npm audit | Available | Node.js 24 / npm installed
+Pytest / Test runner | Not Installed | No automated test framework (e.g. pytest/jest) configured in requirements.txt or package.json
+Docker / Compose | Available | docker-compose.yml and Dockerfiles present in repo

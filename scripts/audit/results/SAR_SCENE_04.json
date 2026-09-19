@@ -1,0 +1,25 @@
+{
+  "scene_id": "SAR_SCENE_04",
+  "title": "Scene 04: Heavy Blowout Feathered Plume",
+  "filename": "sar_scene_04_plume_feathered_slick.tif",
+  "class_counts": {
+    "0": 55122,
+    "1": 10414,
+    "2": 0,
+    "3": 0
+  },
+  "claimed": {
+    "area_km2": 84.74,
+    "confidence": 92.9,
+    "age_bucket": "fresh"
+  },
+  "measured": {
+    "area_km2_backend": 84.73695556640173,
+    "area_km2_geodesic": 79.81563184942782,
+    "area_discrepancy_pct": 6.165864509170325,
+    "confidence_pct": 92.93729662895203,
+    "elongation": 1.772060383888796,
+    "age_bucket": "fresh"
+  },
+  "verdict": "VERIFIED"
+}

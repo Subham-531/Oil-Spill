@@ -85,12 +85,12 @@ def download_cmems_currents(dry_run=False):
 
 def download_cds_wind(dry_run=False):
     print("\n--- 3. ERA5 Wind Data (CDS) ---")
-    import cdsapi
-    
     out_file = WIND_DIR / "demo_wind.nc"
     if out_file.exists():
         print("✅ ERA5 wind data already exists.")
         return
+
+    import cdsapi
 
     # Create the .cdsapirc file for cdsapi to use
     rc_path = Path.home() / ".cdsapirc"

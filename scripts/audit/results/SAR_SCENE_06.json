@@ -1,0 +1,25 @@
+{
+  "scene_id": "SAR_SCENE_06",
+  "title": "Scene 06: Dual-Vessel Convergence Discharge",
+  "filename": "sar_scene_06_dual_streak_discharge.tif",
+  "class_counts": {
+    "0": 61254,
+    "1": 4282,
+    "2": 0,
+    "3": 0
+  },
+  "claimed": {
+    "area_km2": 16.94,
+    "confidence": 88.3,
+    "age_bucket": ">24h"
+  },
+  "measured": {
+    "area_km2_backend": 32.66749511718811,
+    "area_km2_geodesic": 30.807342913799467,
+    "area_discrepancy_pct": 6.038015704870899,
+    "confidence_pct": 88.31799030303955,
+    "elongation": 8.336836488868766,
+    "age_bucket": ">24h"
+  },
+  "verdict": "REFUTED"
+}

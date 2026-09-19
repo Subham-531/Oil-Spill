@@ -1,0 +1,309 @@
+{
+  "scenes": {
+    "SAR_SCENE_01": {
+      "scene_id": "SAR_SCENE_01",
+      "title": "Scene 01: Fresh Linear Tanker Discharge",
+      "filename": "sar_scene_01_fresh_linear_slick.tif",
+      "class_counts": {
+        "0": 62085,
+        "1": 3451,
+        "2": 0,
+        "3": 0
+      },
+      "claimed": {
+        "area_km2": 27.21,
+        "confidence": 90.1,
+        "age_bucket": ">24h"
+      },
+      "measured": {
+        "area_km2_backend": 27.207872314452963,
+        "area_km2_geodesic": 25.651443032735706,
+        "area_discrepancy_pct": 6.0676090609443785,
+        "confidence_pct": 90.12675881385803,
+        "elongation": 6.73841491165889,
+        "age_bucket": ">24h"
+      },
+      "verdict": "VERIFIED"
+    },
+    "SAR_SCENE_02": {
+      "scene_id": "SAR_SCENE_02",
+      "title": "Scene 02: Dispersed Wind-Sheared Patch",
+      "filename": "sar_scene_02_dispersed_patch_spill.tif",
+      "class_counts": {
+        "0": 60444,
+        "1": 5092,
+        "2": 0,
+        "3": 0
+      },
+      "claimed": {
+        "area_km2": 42.62,
+        "confidence": 94.0,
+        "age_bucket": "fresh"
+      },
+      "measured": {
+        "area_km2_backend": 42.621154541016075,
+        "area_km2_geodesic": 40.15785848477253,
+        "area_discrepancy_pct": 6.134032414048176,
+        "confidence_pct": 93.97478699684143,
+        "elongation": 1.4385355116922909,
+        "age_bucket": "fresh"
+      },
+      "verdict": "VERIFIED"
+    },
+    "SAR_SCENE_03": {
+      "scene_id": "SAR_SCENE_03",
+      "title": "Scene 03: Vessel Wake Discharge with Point Target",
+      "filename": "sar_scene_03_vessel_wake_discharge.tif",
+      "class_counts": {
+        "0": 56452,
+        "1": 9084,
+        "2": 0,
+        "3": 0
+      },
+      "claimed": {
+        "area_km2": 33.11,
+        "confidence": 69.6,
+        "age_bucket": "6-24h"
+      },
+      "measured": {
+        "area_km2_backend": 33.10967944336087,
+        "area_km2_geodesic": 31.240423225718708,
+        "area_discrepancy_pct": 5.983453566350194,
+        "confidence_pct": 69.57271695137024,
+        "elongation": 4.4094821177575625,
+        "age_bucket": "6-24h"
+      },
+      "verdict": "VERIFIED"
+    },
+    "SAR_SCENE_04": {
+      "scene_id": "SAR_SCENE_04",
+      "title": "Scene 04: Heavy Blowout Feathered Plume",
+      "filename": "sar_scene_04_plume_feathered_slick.tif",
+      "class_counts": {
+        "0": 55122,
+        "1": 10414,
+        "2": 0,
+        "3": 0
+      },
+      "claimed": {
+        "area_km2": 84.74,
+        "confidence": 92.9,
+        "age_bucket": "fresh"
+      },
+      "measured": {
+        "area_km2_backend": 84.73695556640173,
+        "area_km2_geodesic": 79.81563184942782,
+        "area_discrepancy_pct": 6.165864509170325,
+        "confidence_pct": 92.93729662895203,
+        "elongation": 1.772060383888796,
+        "age_bucket": "fresh"
+      },
+      "verdict": "VERIFIED"
+    },
+    "SAR_SCENE_05": {
+      "scene_id": "SAR_SCENE_05",
+      "title": "Scene 05: Coastal Nearshore Anchor Spill",
+      "filename": "sar_scene_05_coastal_approach_spill.tif",
+      "class_counts": {
+        "0": 58612,
+        "1": 6924,
+        "2": 0,
+        "3": 0
+      },
+      "claimed": {
+        "area_km2": 55.37,
+        "confidence": 91.7,
+        "age_bucket": "fresh"
+      },
+      "measured": {
+        "area_km2_backend": 55.37230664062647,
+        "area_km2_geodesic": 52.22483959204814,
+        "area_discrepancy_pct": 6.026762500688595,
+        "confidence_pct": 91.74391627311707,
+        "elongation": 1.297627813069783,
+        "age_bucket": "fresh"
+      },
+      "verdict": "VERIFIED"
+    },
+    "SAR_SCENE_06": {
+      "scene_id": "SAR_SCENE_06",
+      "title": "Scene 06: Dual-Vessel Convergence Discharge",
+      "filename": "sar_scene_06_dual_streak_discharge.tif",
+      "class_counts": {
+        "0": 61254,
+        "1": 4282,
+        "2": 0,
+        "3": 0
+      },
+      "claimed": {
+        "area_km2": 16.94,
+        "confidence": 88.3,
+        "age_bucket": ">24h"
+      },
+      "measured": {
+        "area_km2_backend": 32.66749511718811,
+        "area_km2_geodesic": 30.807342913799467,
+        "area_discrepancy_pct": 6.038015704870899,
+        "confidence_pct": 88.31799030303955,
+        "elongation": 8.336836488868766,
+        "age_bucket": ">24h"
+      },
+      "verdict": "REFUTED"
+    },
+    "SAR_SCENE_07": {
+      "scene_id": "SAR_SCENE_07",
+      "title": "Scene 07: Weathered Emulsified Spill (>24h)",
+      "filename": "sar_scene_07_weathered_aged_spill.tif",
+      "class_counts": {
+        "0": 60451,
+        "1": 5085,
+        "2": 0,
+        "3": 0
+      },
+      "claimed": {
+        "area_km2": 41.23,
+        "confidence": 92.2,
+        "age_bucket": "fresh"
+      },
+      "measured": {
+        "area_km2_backend": 41.231432373046786,
+        "area_km2_geodesic": 38.808243292078885,
+        "area_discrepancy_pct": 6.244006106461656,
+        "confidence_pct": 92.15413928031921,
+        "elongation": 2.739621979864525,
+        "age_bucket": "fresh"
+      },
+      "verdict": "VERIFIED"
+    },
+    "SAR_SCENE_08": {
+      "scene_id": "SAR_SCENE_08",
+      "title": "Scene 08: High-Contrast Heavy Bunker Fuel",
+      "filename": "sar_scene_08_high_contrast_heavy_crude.tif",
+      "class_counts": {
+        "0": 60763,
+        "1": 4773,
+        "2": 0,
+        "3": 0
+      },
+      "claimed": {
+        "area_km2": 39.4,
+        "confidence": 92.8,
+        "age_bucket": "6-24h"
+      },
+      "measured": {
+        "area_km2_backend": 39.39952587890536,
+        "area_km2_geodesic": 37.151853596983315,
+        "area_discrepancy_pct": 6.049960000123792,
+        "confidence_pct": 92.83043146133423,
+        "elongation": 5.744250773906794,
+        "age_bucket": "6-24h"
+      },
+      "verdict": "VERIFIED"
+    },
+    "test_slick.tif": {
+      "scene_id": "test_slick.tif",
+      "file_path": "data/sar/demo/test_slick.tif",
+      "class_counts": {
+        "0": 60343,
+        "1": 5193,
+        "2": 0,
+        "3": 0
+      },
+      "measured": {
+        "area_km2_backend": 45.88790405273607,
+        "area_km2_geodesic": 43.286219203571854,
+        "confidence_pct": 72.41960763931274
+      }
+    },
+    "sample_spill.tif": {
+      "scene_id": "sample_spill.tif",
+      "file_path": "data/sar/sample_spill.tif",
+      "class_counts": {
+        "0": 64746,
+        "1": 790,
+        "2": 0,
+        "3": 0
+      },
+      "measured": {
+        "area_km2_backend": 8.479110058594417,
+        "area_km2_geodesic": 7.996959004083752,
+        "confidence_pct": 88.03122043609619
+      }
+    }
+  },
+  "probes": {
+    "all_zeros": {
+      "counts": {
+        "0": 0,
+        "1": 65536,
+        "2": 0,
+        "3": 0
+      },
+      "mean_probs": [
+        2.1729916625190526e-05,
+        0.9975915551185608,
+        0.0001682151050772518,
+        0.002218516543507576
+      ]
+    },
+    "all_ones": {
+      "counts": {
+        "0": 3407,
+        "1": 62129,
+        "2": 0,
+        "3": 0
+      },
+      "mean_probs": [
+        0.4222171902656555,
+        0.4327002763748169,
+        0.04701726511120796,
+        0.09806528687477112
+      ]
+    },
+    "uniform_128": {
+      "counts": {
+        "0": 65536,
+        "1": 0,
+        "2": 0,
+        "3": 0
+      },
+      "mean_probs": [
+        0.7086106538772583,
+        0.1068488210439682,
+        0.09850433468818665,
+        0.08603623509407043
+      ]
+    },
+    "gaussian_noise": {
+      "counts": {
+        "0": 65513,
+        "1": 23,
+        "2": 0,
+        "3": 0
+      },
+      "mean_probs": [
+        0.8096054792404175,
+        0.07129110395908356,
+        0.06446916610002518,
+        0.0546342208981514
+      ]
+    },
+    "bright_blob_on_dark": {
+      "counts": {
+        "0": 207,
+        "1": 65329,
+        "2": 0,
+        "3": 0
+      },
+      "mean_probs": [
+        0.0032307500950992107,
+        0.9936050176620483,
+        0.000425769598223269,
+        0.002738482551649213
+      ]
+    }
+  },
+  "determinism": true,
+  "class2_total": 0,
+  "class3_total": 0
+}

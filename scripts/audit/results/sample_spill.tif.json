@@ -1,0 +1,15 @@
+{
+  "scene_id": "sample_spill.tif",
+  "file_path": "data/sar/sample_spill.tif",
+  "class_counts": {
+    "0": 64746,
+    "1": 790,
+    "2": 0,
+    "3": 0
+  },
+  "measured": {
+    "area_km2_backend": 8.479110058594417,
+    "area_km2_geodesic": 7.996959004083752,
+    "confidence_pct": 88.03122043609619
+  }
+}

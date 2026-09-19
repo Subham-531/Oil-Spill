@@ -61,10 +61,15 @@ async def run_drift(request: DriftRequest):
         )
         
         # Merge results
+        fallback_applied = hindcast_results.get("date_fallback_applied") or forecast_results.get("date_fallback_applied", False)
         response = {
             "origin_estimate": hindcast_results.get("origin_estimate"),
             "hindcast_track": hindcast_results.get("hindcast_track"),
-            "forecast_track": forecast_results.get("forecast_track")
+            "forecast_track": forecast_results.get("forecast_track"),
+            "warning": (
+                "Requested timestamp outside NetCDF dataset coverage (Jan 14-16, 2024). "
+                "Simulated using January 15, 2024 environmental forcing baseline."
+            ) if fallback_applied else None
         }
         
         return response

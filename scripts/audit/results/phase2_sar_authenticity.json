@@ -1,0 +1,468 @@
+{
+  "data/sar\\demo\\sar_scene_01_fresh_linear_slick.tif": {
+    "path": "data/sar\\demo\\sar_scene_01_fresh_linear_slick.tif",
+    "size_bytes": 65950,
+    "sha256": "7af329162371691fa63e2419d6c4e7ec2522ebd7a12b103eb8674f7bc3814757",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.0009375000000000355,
+      0.0,
+      72.38,
+      0.0,
+      -0.0007812499999999972,
+      19.65,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 17,
+      "max": 225,
+      "mean": 125.09481811523438,
+      "std": 32.918876302142
+    },
+    "dark_pixels": 2346,
+    "inside_variance": 56.78442637665171,
+    "outside_variance": 807.662876109877,
+    "png_path": "data/sar\\demo\\sar_scene_01_fresh_linear_slick.png",
+    "png_match": "diff_30",
+    "contour_count": 1,
+    "contours": [
+      {
+        "area": 2513.5,
+        "perimeter": 464.25692069530487,
+        "solidity": 0.8817751271706719,
+        "circularity": 0.14654532911038
+      }
+    ]
+  },
+  "data/sar\\demo\\sar_scene_02_dispersed_patch_spill.tif": {
+    "path": "data/sar\\demo\\sar_scene_02_dispersed_patch_spill.tif",
+    "size_bytes": 65950,
+    "sha256": "974733c43b8e1628e76245558b0e51dac2af5aaf55ab3cb20448a0df39d34cb4",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.0009375000000000355,
+      0.0,
+      72.3,
+      0.0,
+      -0.0007812499999999972,
+      19.75,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 17,
+      "max": 224,
+      "mean": 122.7645263671875,
+      "std": 35.42607008710799
+    },
+    "dark_pixels": 3736,
+    "inside_variance": 57.95559489187901,
+    "outside_variance": 832.6202373747133,
+    "png_path": "data/sar\\demo\\sar_scene_02_dispersed_patch_spill.png",
+    "png_match": "diff_31",
+    "contour_count": 1,
+    "contours": [
+      {
+        "area": 4316.5,
+        "perimeter": 375.34523344039917,
+        "solidity": 0.8579805207712184,
+        "circularity": 0.38501690549358575
+      }
+    ]
+  },
+  "data/sar\\demo\\sar_scene_03_vessel_wake_discharge.tif": {
+    "path": "data/sar\\demo\\sar_scene_03_vessel_wake_discharge.tif",
+    "size_bytes": 65950,
+    "sha256": "92fde51360ebaa110991ae216d26a7918cd1ca8a7fb021aed304f04588e32198",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.0009375000000000355,
+      0.0,
+      72.44,
+      0.0,
+      -0.0007812499999999972,
+      19.52,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 18,
+      "max": 250,
+      "mean": 124.25566101074219,
+      "std": 33.72529102191731
+    },
+    "dark_pixels": 2755,
+    "inside_variance": 55.22411401806977,
+    "outside_variance": 821.0216134923414,
+    "png_path": "data/sar\\demo\\sar_scene_03_vessel_wake_discharge.png",
+    "png_match": "diff_18",
+    "contour_count": 1,
+    "contours": [
+      {
+        "area": 3012.5,
+        "perimeter": 533.9137753248215,
+        "solidity": 0.578270467415299,
+        "circularity": 0.1327989580182559
+      }
+    ]
+  },
+  "data/sar\\demo\\sar_scene_04_plume_feathered_slick.tif": {
+    "path": "data/sar\\demo\\sar_scene_04_plume_feathered_slick.tif",
+    "size_bytes": 65950,
+    "sha256": "7b8a57dc3fc4a4c3eff85b76738b4950daeca5f557688b5dcf2806771da8a0c2",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.00093749999999998,
+      0.0,
+      72.2,
+      0.0,
+      -0.0007812499999999972,
+      19.8,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 17,
+      "max": 233,
+      "mean": 116.12081909179688,
+      "std": 40.62147245698055
+    },
+    "dark_pixels": 7469,
+    "inside_variance": 57.01995575553498,
+    "outside_variance": 895.8515150338009,
+    "png_path": "data/sar\\demo\\sar_scene_04_plume_feathered_slick.png",
+    "png_match": "diff_22",
+    "contour_count": 1,
+    "contours": [
+      {
+        "area": 8726.5,
+        "perimeter": 586.6833271980286,
+        "solidity": 0.9554387693655225,
+        "circularity": 0.3185975739825928
+      }
+    ]
+  },
+  "data/sar\\demo\\sar_scene_05_coastal_approach_spill.tif": {
+    "path": "data/sar\\demo\\sar_scene_05_coastal_approach_spill.tif",
+    "size_bytes": 65950,
+    "sha256": "a1698ab21758c09508634badd5c86152b23a816b05c8b214940d2286051a1406",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.0009375000000000355,
+      0.0,
+      72.52,
+      0.0,
+      -0.0007812499999999972,
+      19.58,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 17,
+      "max": 229,
+      "mean": 120.9248046875,
+      "std": 37.15579732838925
+    },
+    "dark_pixels": 4789,
+    "inside_variance": 58.687557503381036,
+    "outside_variance": 859.3832686505034,
+    "png_path": "data/sar\\demo\\sar_scene_05_coastal_approach_spill.png",
+    "png_match": "diff_26",
+    "contour_count": 1,
+    "contours": [
+      {
+        "area": 6787.5,
+        "perimeter": 411.00208735466003,
+        "solidity": 0.9647501954374245,
+        "circularity": 0.5049305544019104
+      }
+    ]
+  },
+  "data/sar\\demo\\sar_scene_06_dual_streak_discharge.tif": {
+    "path": "data/sar\\demo\\sar_scene_06_dual_streak_discharge.tif",
+    "size_bytes": 65950,
+    "sha256": "0c4eb90181a124342e515511c916e666242eb8a244a39b5511387a24301319ea",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.00093749999999998,
+      0.0,
+      72.28,
+      0.0,
+      -0.0007812500000000111,
+      19.6,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 18,
+      "max": 228,
+      "mean": 124.60063171386719,
+      "std": 33.73298370533526
+    },
+    "dark_pixels": 2676,
+    "inside_variance": 59.342291888703436,
+    "outside_variance": 831.2100846344907,
+    "png_path": "data/sar\\demo\\sar_scene_06_dual_streak_discharge.png",
+    "png_match": "diff_27",
+    "contour_count": 2,
+    "contours": [
+      {
+        "area": 1363.0,
+        "perimeter": 351.8477598428726,
+        "solidity": 0.8698149329929802,
+        "circularity": 0.13835540796123294
+      },
+      {
+        "area": 1470.5,
+        "perimeter": 379.20309829711914,
+        "solidity": 0.8647456630402822,
+        "circularity": 0.12850828821989468
+      }
+    ]
+  },
+  "data/sar\\demo\\sar_scene_07_weathered_aged_spill.tif": {
+    "path": "data/sar\\demo\\sar_scene_07_weathered_aged_spill.tif",
+    "size_bytes": 65950,
+    "sha256": "d3a48484fa16cff8fcbd94dae2292d60a0322676d4771c9a81246ffddb13ad64",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.00093749999999998,
+      0.0,
+      72.22,
+      0.0,
+      -0.0007812500000000111,
+      19.92,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 17,
+      "max": 228,
+      "mean": 122.86485290527344,
+      "std": 35.069362683229706
+    },
+    "dark_pixels": 3536,
+    "inside_variance": 57.7801506898661,
+    "outside_variance": 831.1819934693028,
+    "png_path": "data/sar\\demo\\sar_scene_07_weathered_aged_spill.png",
+    "png_match": "diff_27",
+    "contour_count": 1,
+    "contours": [
+      {
+        "area": 4057.0,
+        "perimeter": 462.842707157135,
+        "solidity": 0.8311821348084409,
+        "circularity": 0.23798414341612784
+      }
+    ]
+  },
+  "data/sar\\demo\\sar_scene_08_high_contrast_heavy_crude.tif": {
+    "path": "data/sar\\demo\\sar_scene_08_high_contrast_heavy_crude.tif",
+    "size_bytes": 65950,
+    "sha256": "5fe7dcab65b9a3b36954e4616fc9ac100f6c6dd244cd63f6b1daa071a5d2810b",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.00093749999999998,
+      0.0,
+      72.4,
+      0.0,
+      -0.0007812499999999972,
+      19.62,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 18,
+      "max": 225,
+      "mean": 123.2379150390625,
+      "std": 34.827690479268576
+    },
+    "dark_pixels": 3408,
+    "inside_variance": 58.4841727521821,
+    "outside_variance": 824.867090614556,
+    "png_path": "data/sar\\demo\\sar_scene_08_high_contrast_heavy_crude.png",
+    "png_match": "diff_30",
+    "contour_count": 1,
+    "contours": [
+      {
+        "area": 3836.5,
+        "perimeter": 485.9137748479843,
+        "solidity": 0.919142309535218,
+        "circularity": 0.2041863214136046
+      }
+    ]
+  },
+  "data/sar\\demo\\test_slick.tif": {
+    "path": "data/sar\\demo\\test_slick.tif",
+    "size_bytes": 65950,
+    "sha256": "34eade4de5d33ff2d5c17a23a89af3519d7aba2db308b0fa7a3e360401851bd7",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.001171874999999989,
+      0.0,
+      72.3,
+      0.0,
+      -0.0011718750000000028,
+      19.6,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 3,
+      "max": 255,
+      "mean": 122.01243591308594,
+      "std": 44.50368233602956
+    },
+    "dark_pixels": 2816,
+    "inside_variance": 136.10676801697284,
+    "outside_variance": 1683.3770043081008,
+    "png_path": null,
+    "png_match": null,
+    "contour_count": 1,
+    "contours": [
+      {
+        "area": 2390.0,
+        "perimeter": 361.36247873306274,
+        "solidity": 0.8990031972917059,
+        "circularity": 0.22999672491437675
+      }
+    ]
+  },
+  "data/sar\\sample_spill.tif": {
+    "path": "data/sar\\sample_spill.tif",
+    "size_bytes": 65950,
+    "sha256": "b7c51db1026d8bea2f6ebaf2c109e2b748005d130b2f82b0b359454acb0207fe",
+    "dtype": "uint8",
+    "dimensions": [
+      256,
+      256
+    ],
+    "band_count": 1,
+    "crs": "EPSG:4326",
+    "transform": [
+      0.00093749999999998,
+      0.0,
+      72.4,
+      0.0,
+      -0.0009375000000000078,
+      19.6,
+      0.0,
+      0.0,
+      1.0
+    ],
+    "tags": {
+      "AREA_OR_POINT": "Area"
+    },
+    "pixel_stats": {
+      "min": 15,
+      "max": 208,
+      "mean": 126.540283203125,
+      "std": 20.180291520138276
+    },
+    "dark_pixels": 630,
+    "inside_variance": 44.460995212899974,
+    "outside_variance": 335.6090810987423,
+    "png_path": null,
+    "png_match": null,
+    "contour_count": 1,
+    "contours": [
+      {
+        "area": 450.0,
+        "perimeter": 508.41630148887634,
+        "solidity": 0.4893964110929853,
+        "circularity": 0.02187678223485343
+      }
+    ]
+  }
+}

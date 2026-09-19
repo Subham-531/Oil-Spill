@@ -1,0 +1,25 @@
+{
+  "scene_id": "SAR_SCENE_05",
+  "title": "Scene 05: Coastal Nearshore Anchor Spill",
+  "filename": "sar_scene_05_coastal_approach_spill.tif",
+  "class_counts": {
+    "0": 58612,
+    "1": 6924,
+    "2": 0,
+    "3": 0
+  },
+  "claimed": {
+    "area_km2": 55.37,
+    "confidence": 91.7,
+    "age_bucket": "fresh"
+  },
+  "measured": {
+    "area_km2_backend": 55.37230664062647,
+    "area_km2_geodesic": 52.22483959204814,
+    "area_discrepancy_pct": 6.026762500688595,
+    "confidence_pct": 91.74391627311707,
+    "elongation": 1.297627813069783,
+    "age_bucket": "fresh"
+  },
+  "verdict": "VERIFIED"
+}

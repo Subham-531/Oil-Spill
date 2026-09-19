@@ -36,9 +36,7 @@ class LiveAISManager:
     _lock = threading.Lock()
 
     def __init__(self):
-        self.api_key = os.getenv(
-            "AISSTREAM_API_KEY", "645213e4c0454c7c95c9a952579d68eb520d8a37"
-        )
+        self.api_key = os.getenv("AISSTREAM_API_KEY", "")
         self.ws_url = "wss://stream.aisstream.io/v0/stream"
         self._running = False
         self._thread: Optional[threading.Thread] = None
@@ -116,6 +114,10 @@ class LiveAISManager:
 
     def start_ingestion(self, bounding_boxes=None):
         """Start the background ingestion listener thread if not already running."""
+        if not self.api_key:
+            logger.warning("AISSTREAM_API_KEY environment variable not set; live AIS ingestion disabled.")
+            return
+
         if self._thread and self._thread.is_alive():
             return
 
